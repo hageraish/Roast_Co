@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roast & Co</title>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Asap+Sharp:ital,wght@0,100..900;1,100..900&family=Fjalla+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav>
+        <div class="navbar">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i class="fa-solid fa-mug-hot"></i> 
+                </div>
+                <div class="logo-text">
+                    <h2>Roast & Co.</h2>
+                    <p>Specialty Coffee Roasters</p>
+                </div>
+            </div>
+            <input type="checkbox" id="menu-toggle" class="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <div class="navlink">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#process">Process</a></li>
+                    <li><a href="#locations">Location</a></li>
+                    <li class="mobile-only"><a href="#contact" class="btn">Order Online</a></li>
+                </ul>
+            </div>
+            <a href="#contact" class="btn desktop-only">Order Online</a>
+        </div>
+    </nav>
+
+    <!-- home -->
+    <section>
+        <div class="home">
+            <div class="test content">
+                <p>Specialty Coffee Roasters</p>
+                <h1>Crafted with <br> <span>Passion & Precision</span></h1>
+                <p class="last-of-type">From bean to cup, we obsess over every detail. Experience specialty coffee the way it was meant to be fresh-roasted, expertly brewed, and served with care.</p>
+                <a href="#menu" class="btn-1">View Our Menu</a>
+                <a href="#contact" class="btn-2">Order Online</a>
+            </div>
+            <div class="test home-img-wrap">
+                <span class="deco-circle deco-1"></span>
+                <span class="deco-circle deco-2"></span>
+                <img src="./img/home.jpg" alt="home">
+                <div class="detail">
+                    <div class="stat stat-1">
+                        <h3>+</h3>
+                        <p>Years Roasting</p>
+                    </div>
+                    <div class="stat stat-2">
+                        <h3></h3>
+                        <p>Origin Countries</p>
+                    </div>
+                    <div class="stat stat-3">
+                        <h3></h3>
+                        <p>Portland Locations</p>
+                    </div>
+                    <div class="stat stat-4">
+                        <h3></h3>
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- menu -->
+    <section id="menu">
+        <div class="menu">
+            <div class="menu-title">
+                <h2>Our Menu</h2>
+                <p>Handcrafted drinks and fresh-baked goods, made with love.</p>
+            </div>
+            <div class="menu-category">
+                <div class="category-head">
+                    <h3>Espresso Drinks</h3>
+                    <p>Crafted with our signature house blend</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="./img/espresso.jpg" alt="Espresso">
+                        <div class="item-info">
+                            <div class="item-top">
+                                <h4>Espresso</h4>
+                                <span class="price">$3.50</span>
+                            </div>
+                            <p>Rich, bold, and perfectly extracted.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./img/cortado.jpg" alt="Cortado">
+                        <div class="item-info">
+                            <div class="item-top">
+                                <h4>Cortado</h4>
+                                <span class="price">$4.50</span>
+                            </div>
+                            <p>Equal parts espresso and steamed milk.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./img/Cappuccino.jpg" alt="Cappuccino">
+                        <div class="item-info">
+                            <div class="item-top">
+                                <h4>Cappuccino</h4>
+                                <span class="price">$5.00</span>
+                            </div>
+                            <p>Velvety foam with a double shot.</p>
+                            <div class="tags"><span class="tag popular">Popular</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <div class="category-head">
+                    <h3>Pour Overs</h3>
+                    <p>Single-origin beans, brewed to order</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="./img/Ethiopian Yirgacheffe.jpg" alt="Ethiopian Yirgacheffe">
+                        <div class="item-info">
+                            <div class="item-top">
+                                <h4>Ethiopian Yirgacheffe</h4>
+                                <span class="price">$6.00</span>
+                            </div>
+                            <p>Floral, citrus, and tea-like.</p>
+                            <div class="tags">
+                                <span class="tag">Bergamot</span>
+                                <span class="tag">Jasmine</span>
+                                <span class="tag">Lemon</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./img/Colombian Huila.jpg" alt="Colombian Huila">
+                        <div class="item-info">
+                            <div class="item-top">
+                                <h4>Colombian Huila</h4>
+                                <span class="price">$5.50</span>
+                            </div>
+                            <p>Caramel, red apple, and milk chocolate.</p>
+                            <div class="tags">
+                                <span class="tag popular">Popular</span>
+                                <span class="tag">Caramel</span>
+                                <span class="tag">Apple</span>
+                                <span class="tag">Chocolate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./img/Guatemalan Antigua.jpg" alt="Guatemalan Antigua">
+                        <div class="item-info">
+                            <div class="item-top">
+                                <h4>Guatemalan Antigua</h4>
+                                <span class="price">$5.50</span>
+                            </div>
+                            <p>Smoky, cocoa, and spice.</p>
+                            <div class="tags">
+                                <span class="tag">Cocoa</span>
+                                <span class="tag">Smoke</span>
+                                <span class="tag">Spice</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-category">
+                <div class="category-head">
+                    <h3>Cold Drinks</h3>
+                    <p>Refreshing and smooth</p>
+                </div>
+                <div class="menu-grid">
+                    <div class="menu-item">
+                        <img src="./img/Cold Brew.jpg" alt="Cold Brew">
+                        <div class="item-info">
+                            <div class="item-top">
+                                <h4>Cold Brew</h4>
+                                <span class="price">$5.00</span>
+                            </div>
+                            <p>18-hour steeped perfection.</p>
+                            <div class="tags"><span class="tag popular">Popular</span></div>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./img/Iced Latte.jpg" alt="Iced Latte">
+                        <div class="item-info">
+                            <div class="item-top">
+                                <h4>Iced Latte</h4>
+                                <span class="price">$5.50</span>
+                            </div>
+                            <p>Espresso over ice with cold milk.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <img src="./img/Nitro Cold Brew.jpg" alt="Nitro Cold Brew">
+                        <div class="item-info">
+                            <div class="item-top">
+                                <h4>Nitro Cold Brew</h4>
+                                <span class="price">$6.00</span>
+                            </div>
+                            <p>Creamy, cascading, on tap.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about -->
+    <section id="about">
+        <div class="about">
+            <div class="about-img">
+                <img src="./img/about.jpg" alt="about">
+                <div class="detail">
+                    <div class="stat stat-1">
+                        <h3>+</h3>
+                        <p>Years Roasting</p>
+                    </div>
+                    <div class="stat stat-2">
+                        <h3></h3>
+                        <p>Origin Countries</p>
+                    </div>
+                    <div class="stat stat-3">
+                        <h3></h3>
+                        <p>Portland Locations</p>
+                    </div>
+                    <div class="stat stat-4">
+                        <h3></h3>
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-content">
+                <span class="est">Est. 2009</span>
+                <h2>From Portland, With Love</h2>
+                <p>What started as a small cart at the Saturday Market has grown into three beloved locations across Portland. But our mission remains the same: to source exceptional coffees, roast them with care, and share them with our community.</p>
+                <p>Every bag we roast tells a story of the farmers who grew it, the land that nurtured it, and the hands that brought it to your cup. We believe coffee should be more than just caffeine; it should be an experience.</p>
+                <a href="#menu" class="btn-1">Learn More About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- process -->
+    <section id="process">
+    <div class="process">
+        <div class="process-title">
+            <h2>From Origin to Cup</h2>
+            <p>Our commitment to quality at every step</p>
+        </div>
+        <div class="timeline">
+            <div class="step">
+                <div class="step-content">
+                    <div class="step-head">
+                        <div class="step-icon"><i class="fa-solid fa-globe"></i></div>
+                        <span class="step-num">Step 1</span>
+                    </div>
+                    <h3>Sourcing</h3>
+                    <p>We partner directly with farmers across the coffee belt, ensuring fair prices and sustainable practices.</p>
+                </div>
+                <span class="line-dot"></span>
+                <div class="step-content"></div>
+            </div>
+
+            <div class="step">
+                <div class="step-content"></div>
+                <span class="line-dot"></span>
+                <div class="step-content">
+                    <div class="step-head">
+                        <div class="step-icon"><i class="fa-solid fa-fire"></i></div>
+                        <span class="step-num">Step 2</span>
+                    </div>
+                    <h3>Roasting</h3>
+                    <p>Small-batch roasting in our Portland facility, where we develop each bean to its full potential.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-content">
+                    <div class="step-head">
+                        <div class="step-icon"><i class="fa-solid fa-flask"></i></div>
+                        <span class="step-num">Step 3</span>
+                    </div>
+                    <h3>Cupping</h3>
+                    <p>Rigorous quality control through daily cupping sessions to ensure consistency and excellence.</p>
+                </div>
+                <span class="line-dot"></span>
+                <div class="step-content"></div>
+            </div>
+
+            <div class="step">
+                <div class="step-content"></div>
+                <span class="line-dot"></span>
+                <div class="step-content">
+                    <div class="step-head">
+                        <div class="step-icon"><i class="fa-regular fa-heart"></i></div>
+                        <span class="step-num">Step 4</span>
+                    </div>
+                    <h3>Serving</h3>
+                    <p>From our hands to yours, every cup is crafted with care by our trained baristas.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-- testimonials -->
+    <section id="testimonials">
+        <div class="testimonials">
+            <div class="testimonials-title">
+                <h2>What People Are Saying</h2>
+                <p>Join thousands of happy coffee lovers</p>
+            </div>
+            <div class="reviews">
+                <div class="review">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="quote">"The best coffee I've ever had. Their Ethiopian pour-over is transcendent."</p>
+                    <div class="reviewer">
+                        <div class="avatar">M</div>
+                        <div class="reviewer-info">
+                            <h4>Michael Chen</h4>
+                            <span>Coffee Enthusiast</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="quote">"Finally, a coffee shop that takes their craft seriously. Worth every penny."</p>
+                    <div class="reviewer">
+                        <div class="avatar">S</div>
+                        <div class="reviewer-info">
+                            <h4>Sarah Williams</h4>
+                            <span>Food Blogger</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review">
+                    <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                    <p class="quote">"I've been a subscriber for 2 years. The beans arrive fresh, and the variety keeps me excited."</p>
+                    <div class="reviewer">
+                        <div class="avatar">D</div>
+                        <div class="reviewer-info">
+                            <h4>David Park</h4>
+                            <span>Home Barista</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- locations -->
+    <section id="locations">
+        <div class="locations-title">
+            <h2>Our Locations</h2>
+            <p>Find your nearest Roast & Co. and experience specialty coffee in person</p>
+        </div>
+        <div class="locations">
+            <div class="location-card">
+                <div class="location-img">
+                    <span class="badge flagship">Flagship</span>
+                    <img src="./img/locat-1.jpg" alt="Pearl District">
+                </div>
+                <div class="location-info">
+                    <h3>Pearl District</h3>
+                    <p class="loc-line"><i class="fa-solid fa-location-dot"></i> 123 Roastery Lane, Portland, OR 97201</p>
+                    <p class="loc-line"><i class="fa-solid fa-phone"></i> (555) 234-5678</p>
+                    <p class="loc-line"><i class="fa-solid fa-clock"></i> Monday-Friday 7am-7pm, <br> &nbsp; &nbsp; &nbsp; Saturday-Sunday 8am-6pm</p>
+                    <div class="tags">
+                        <span class="tag">Roastery Tours</span>
+                        <span class="tag">Pour Over Bar</span>
+                        <span class="tag">Outdoor Seating</span>
+                    </div>
+                    <a href="https://maps.app.goo.gl/cDeuahhk2eUad2T3A" target="_blank" class="directions">Get Directions <i class="fa-solid fa-arrow-up-long" style="transform: rotate(45deg);"></i></a>
+                </div>
+            </div>
+
+            <div class="location-card">
+                <div class="location-img">
+                    <img src="./img/locat-2.jpg" alt="Alberta Arts">
+                </div>
+                <div class="location-info">
+                    <h3>Alberta Arts</h3>
+                    <p class="loc-line"><i class="fa-solid fa-location-dot"></i> 456 Alberta St, Portland, OR 97211</p>
+                    <p class="loc-line"><i class="fa-solid fa-phone"></i> (555) 234-5679</p>
+                    <p class="loc-line"><i class="fa-solid fa-clock"></i> Monday-Friday 6:30am-6pm, <br> &nbsp; &nbsp; &nbsp; Saturday-Sunday 7am-5pm</p>
+                    <div class="tags">
+                        <span class="tag">Drive-Thru</span>
+                        <span class="tag">Coworking Space</span>
+                    </div>
+                    <a href="https://maps.app.goo.gl/UR1Fe1CkiPaF2VuT6" target="_blank" class="directions">Get Directions <i class="fa-solid fa-arrow-up-long" style="transform: rotate(45deg);"></i></a>
+                </div>
+            </div>
+
+            <div class="location-card">
+                <div class="location-img">
+                    <img src="./img/locat-3.jpg" alt="Hawthorne">
+                </div>
+                <div class="location-info">
+                    <h3>Hawthorne</h3>
+                    <p class="loc-line"><i class="fa-solid fa-location-dot"></i> 789 Hawthorne Blvd, Portland, <br> &nbsp; &nbsp;  OR 97214</p>
+                    <p class="loc-line"><i class="fa-solid fa-phone"></i> (555) 234-5680</p>
+                    <p class="loc-line"><i class="fa-solid fa-clock"></i> Daily 7am-7pm</p>
+                    <div class="tags">
+                        <span class="tag">Dog Friendly Patio</span>
+                        <span class="tag">Live Music Fridays</span>
+                    </div>
+                    <a href="https://maps.app.goo.gl/sd5aAxbcG3yCm11d7" target="_blank" class="directions">Get Directions <i class="fa-solid fa-arrow-up-long" style="transform: rotate(45deg);"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- order-online(contact) -->
+    <section id="contact">
+        <div class="contact">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <h2>Join the Club</h2>
+            <p>Get exclusive offers, brewing tips, and first access to new roasts. Plus, 10% off your first order.</p>
+            <form class="contact-form">
+                <input type="email" placeholder="Enter your email" name="email" required>
+                <input type="text" placeholder="Enter your request" name="request" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <span class="contact-note">Join +50K coffee lovers. Unsubscribe anytime.</span>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fa-solid fa-mug-hot"></i>
+                        </div>
+                        <h3>Roast & Co.</h3>
+                    </div>
+                    <p>Artisan coffee roasters dedicated to sourcing, roasting, and serving the finest specialty coffees from around the world.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/roast_and_co/" target="_blank" class="social-icon icon1"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://twitter.com/roast_and_co" target="_blank" class="social-icon icon2"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://web.facebook.com/roastandcoffee/?_rdc=1&_rdr#" target="_blank" class="social-icon icon3"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-mid">
+                <div class="footer-info">
+                    <h5>HOURS</h5>
+                    <p>Monday-Friday: 7am - 7pm</p>
+                    <p>Saturday-Sunday: 8am - 6pm</p>
+                </div>
+                <div class="footer-info">
+                    <h5>CONTACT</h5>
+                    <p>hello@roastandco.com</p>
+                    <p>(555) 234-5678</p>
+                </div>
+                <div class="footer-info">
+                    <h5>FLAGSHIP LOCATION</h5>
+                    <p>123 Roastery Lane</p>
+                    <p>Portland, OR 97201</p>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026.All rights reserved.</p>
+                <div class="footer-bottom-p">
+                    <p>Privacy Policy</p>
+                    <p>Terms of Service</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
