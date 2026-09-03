@@ -71,14 +71,13 @@ img{
     padding-bottom: 5px;
 }
 .navlink a:hover{
-    color: rgb(200, 160, 140);
+    color: white;
     border-bottom: 1px solid rgb(200, 160, 140);
 }
 a{
     text-decoration: none;
 }
 .btn{
-    display: inline-block;
     padding: 12px 26px;
     background-color: rgb(180, 130, 110);
     color: white;
@@ -125,18 +124,22 @@ a{
     color: rgba(255, 255, 255, 0.6);
     padding-top: 25px;
 }
+.btn-group{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
 .content a{
-    display: inline-block;
     padding: 16px 32px;
     text-align: center;
     border-radius: 30px;
     font-weight: bold;
-    margin-top: 30px;
 }
 .btn-1{
     background-color: rgb(180, 130, 110);
     color: white;
-    margin-right: 10px;
     transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
     overflow: hidden;
     cursor: pointer;
@@ -334,7 +337,6 @@ a{
     width: 45%;
     min-width: 300px;
     position: relative;
-    display: inline-block;
 }
 .about-img img{
     width: 100%;
@@ -415,7 +417,8 @@ a{
     padding-bottom: 20px;
 }
 .about-content .btn-1{
-    display: inline-block;
+    display: block;
+    width: fit-content;
     margin-top: 10px;
     padding: 16px 32px;
     background-color: rgb(180, 130, 110);
@@ -932,7 +935,7 @@ footer{
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 .desktop-only{
-    display: inline-block;
+    display: block;
 }
 .mobile-only{
     display: none;
@@ -1064,7 +1067,8 @@ footer{
         border-bottom: 1px solid rgba(255,255,255,0.08);
     }
     .navlink ul li a.btn{
-        display: inline-block;
+        display: block;
+        width: fit-content;
         margin-top: 8px;
     }
     .menu-toggle:checked ~ .navlink{
@@ -1090,8 +1094,8 @@ footer{
     .test{
         width: 100%;
     }
-    .content a{
-        margin-inline: auto;
+    .btn-group{
+        justify-content: center;
     }
     .test img{
         width: 65%;
@@ -1139,6 +1143,9 @@ footer{
     }
     .about-img, .about-content{
         width: 100%;
+    }
+    .about-content .btn-1{
+        margin-inline: auto;
     }
     .detail{
         position: absolute;
@@ -1240,14 +1247,13 @@ footer{
         padding-inline: 20px;
         gap: 35px;
     }
+    .btn-group{
+        flex-direction: column;
+        align-items: center;
+    }
     .content a{
         display: block;
         width: 100%;
-        margin-inline: 0;
-        margin-top: 15px;
-    }
-    .btn-1{
-        margin-right: 0;
     }
     .test img{
         width: 72%;
